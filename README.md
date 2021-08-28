@@ -1,4 +1,4 @@
-# change_shape_withcommand_pattern
+# change shape with command pattern
 
 A new Flutter project.
 
