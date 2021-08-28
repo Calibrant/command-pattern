@@ -4,7 +4,7 @@ import 'package:change_shape_withcommand_pattern/domains/command.dart';
 import 'package:change_shape_withcommand_pattern/models/shape.dart';
 
 class ChangeHeightCommand implements Command {
- Shape shape;
+  Shape shape;
   late double previousHeight;
   ChangeHeightCommand(this.shape) {
     previousHeight = shape.height;
@@ -14,6 +14,10 @@ class ChangeHeightCommand implements Command {
   void execute() {
     Random random = Random();
     shape.height = 50 + random.nextInt(150 - 50).toDouble();
+  }
+
+  String getTitle() {
+    return 'Change height';
   }
 
   @override

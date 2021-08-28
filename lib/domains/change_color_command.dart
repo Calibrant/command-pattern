@@ -23,4 +23,9 @@ class ChangeColorCommand implements Command {
   void undo() {
     shape.color = previousColor;
   }
+
+  @override
+  String getTitle() {
+    return 'Change color';
+  }
 }

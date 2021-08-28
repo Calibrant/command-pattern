@@ -17,6 +17,10 @@ class ChangeWidthCommand implements Command {
     shape.width = 50 + random.nextInt(150 - 50).toDouble();
   }
 
+  String getTitle(){
+    return 'Change width';
+  }
+
   @override
   void undo() {
     shape.width = previousWidth;
